@@ -7,6 +7,7 @@ def list(request):
     conn = sqlite3.connect('db.sqlite3')
     conn.row_factory = sqlite3.Row  # for getting columns
     curs = conn.cursor()
+
    # economics
     curs.execute('select * from polls_economics pe')  # * 전체를 가져옴
     data = curs.fetchall()

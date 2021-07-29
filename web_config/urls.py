@@ -25,6 +25,10 @@ urlpatterns = [
     path('', views.index),
     path('index01', views.index01),
     path('index02', views.index02),
+
     path('maps/home', mapsviews.home),
+    path('maps/plotly', mapsviews.plotly),
+    path('maps/piegraph', mapsviews.piegraph),
+
     path('board/list', boardviews.list),
 ]
